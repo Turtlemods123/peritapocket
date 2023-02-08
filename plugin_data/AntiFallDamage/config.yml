@@ -1,0 +1,12 @@
+---
+# all : Prevent fall damage in all worlds
+# whitelist : Evite los daños por caídas en los mundos que se indican a continuación
+# blacklist : Prevenir los daños por caídas en todos los mundos que no se enumeran a continuación
+Mode: whitelist
+Worlds: ["lobby"]
+# Worlds: ["world1", "world2"]
+
+# If true, fall damage will not affect players with antifalldamage.use permissions
+# If false, fall damage will not affect all players
+permissions: false
+...

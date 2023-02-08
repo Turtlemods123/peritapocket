@@ -1,0 +1,66 @@
+---
+scoreboardIp: Para salir use /spawn
+banned-commands:
+- /kill
+death-respawn-inMap: true
+join-and-respawn-protected: true
+protected-time: 5
+protected-message: '&eAhora estás protegido por  &c{TIME} &esegundos'
+death-attack-message: '&e{PLAYER} &fmando con yisus a &c{KILLER}'
+death-void-message: '&c{PLAYER} &feste wei se callo al vacio xd'
+respawn-message: '&eRespawned'
+join-message: '&7{PLAYER} &eentro al desmadre'
+leave-message: '&7{PLAYER} &ese fue llorando'
+kits:
+  default:
+    slot-0:
+      id: 267
+      meta: 0
+      count: 1
+      enchants: []
+    slot-1:
+      id: 322
+      meta: 0
+      count: 5
+      enchants: []
+    slot-2:
+      id: 261
+      meta: 0
+      count: 1
+      enchants: []
+    slot-3:
+      id: 262
+      meta: 0
+      count: 15
+      enchants: []
+    helmet:
+      id: 306
+      enchants: []
+    chestplate:
+      id: 307
+      enchants:
+        id-0:
+          level: 2
+    leggings:
+      id: 308
+      enchants: []
+    boots:
+      id: 309
+      enchants: []
+kills-messages:
+- '&eEres el jefe, tienes {KILLS} kills :).'
+- '&eA buena ahora has alcanzado {KILLS} kills :D.'
+- '&eAhora eres un gran guerrero/a, tienes {KILLS} kills ;D.'
+scoreboard-title: PeritaPVP
+provider: sqlite
+database:
+  type: sqlite
+  sqlite:
+    file: arenas.sql
+  mysql:
+    host: 127.0.0.1
+    username: root
+    password: ""
+    schema: your_schema
+  worker-limit: 1
+...

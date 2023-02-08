@@ -1,0 +1,77 @@
+version: 0.1.3
+#IF YOU CHANGE THIS, THE CONFIG WILL REVERT TO ITS ORIGINAL VERSION
+
+
+#########################
+##                     ##
+##  MESSAGES SETTINGS  ##
+##                     ##
+#########################
+
+# MESSAGES PLACEHOLDERS:
+# %player%      - Player who was kicked/banned.
+# %sender%      - Player who kicked/bloked (or: command sender).
+# %reason%      - Reason.
+# %duration%    - Ban duration
+# %ban_date%    - Ban start date (only /baninfo)
+# \n            - New line
+# §0-§9, §a-§f  - Sets the color
+# ///%for%       - «for {X} days»/«until {date}» in tempban messages // CURRENTLY NOT ADDED
+
+# BAN MESSAGES
+DefaultBanReason: "You got the great seal"                                                                             # Default ban reason (if not specified). Also used in ip-ban
+BanBroadcast:     "§6Player §c%sender%§6 banned player §c%player%§6. Reason: §c%reason%§6."                            # Boadcast message about ban (all players can see)
+TempBanBroadcast: "§6Player §c%sender%§6 banned player §c%player%§6 until §c%duration%§6. Reason: §c%reason%§6."       # Boadcast message about temporary ban (all players can see)
+TempBannedPlayerKickMessage: "You was banned on this server until %duration%.\nReason: %reason% (%sender%§r)"          # Message on temporary banned player screen
+BannedPlayerKickMessage:     "You was banned on this server.\nReason: %reason% (%sender%§r)"                           # Message on banned player screen 
+
+# KICK MESSAGES
+DefaultKickReason: "You was kicked for breaking the rules"                                                             # Default kick reason (if not specified)
+KickBroadcast:     "§6Player §c%sender%§6 kicked player §c%player%§6. Reason: §c%reason%§6."                           # Boadcast message about kick (all players can see)
+KickedPlayerKickMessage: "You was kicked from the server. Reason: %reason% (%sender%§r)"                               # Message on kicked player screen
+
+# BANIP MESSAGES
+BanIPBroadcast:     "§6Player §c%sender%§6 banned IP adress §c%player%§6. Reason: §c%reason%§6."                       # Boadcast message about ip ban (all players can see)
+TempBanIPBroadcast: "§6Player §c%sender%§6 banned IP adress §c%player%§6 until §c%duration%§6. Reason: §c%reason%§6."  # Boadcast message about temporary ip ban (all players can see)
+BannedIPKickMessage:     "Your IP was blocked on this server.\nReason: %reason% (%sender%§r)"                          # Message on banned player screen
+TempBannedIPKickMessage: "Your IP was blocked on this server until %duration%.\nReason: %reason% (%sender%§r)"         # Message on temporary banned player screen
+
+# UNBAN MESSAGES
+UnbanBroadcast:  "§6Player §c%sender%§6 unbanned §c%player%§6."  # Boadcast message about unban (all players can see)
+
+# BANINFO MESSAGE
+BanInfo:
+  - "§6---=== BanInfo: §c%player%§r§6 ===---"
+  - "§6 - Ban issued: §c%ban_date%§r"
+  - "§6 - Ban until: §c%duration%§r"
+  - "§6 - Ban reason: §c%reason%§r"
+  - "§6 - Banned by: §c%sender%§r"
+  - "§6 - You can unban:§r %can_unban%"
+
+# ERRORS MESSAGES
+DateFormatError:   "Ban duration error"
+PlayerNotFound:    "Player not found or offline" 
+PlayerNotBanned:   "This player is not banned."
+IPNotBanned:       "This IP is not banned."
+CantBanPlayer:     "You're not permitted to ban this player!"
+CantKickPlayer:    "You're not permitted to kick this player!"
+CantBanOffline:    "You're not permitted to ban player who is offline!"
+CantEditBan:       "You're not permitted to edit this ban!"  
+CantUnbanBannedBy: "You're not permitted to unban a player banned by %sender%!"
+CanUnbanOnlySelf:  "You can only unban players banned by yourself!"
+IncorrectIP: "Specify IP adress"   # Message..:
+forBan:         "to ban"           # «[AdminProtect] Specify IP adress to ban»
+forUnban:       "to unban"         # «[AdminProtect] Specify IP adress to unban»
+
+# OTHER MESSAGES 
+Console: "CONSOLE"           # Admin name (%sender%) when kick/ban from console
+Usage:   "Usage"             # Usage: /...
+Player:  "player"            # <player> in usage description
+IP:      "IP"                # <IP> in usage description
+Reason:  "reason"            # [reason...] in usage description
+Date:    "date or duration"  # <date or duration> in usage description
+mTrue:   "§atrue"
+mFalse:  "§cfalse"
+Forever: "Forever"
+
+

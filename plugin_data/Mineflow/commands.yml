@@ -1,0 +1,12 @@
+---
+perita:
+  command: perita
+  permission: mineflow.customcommand.true
+  description: salir arena
+  subcommands: []
+spawn:
+  command: spawn
+  permission: mineflow.customcommand.true
+  description: salir
+  subcommands: []
+...

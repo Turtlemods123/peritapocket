@@ -1,0 +1,9 @@
+---
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+version: 1 # Don't change this
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+message-hascooldown: "§l§8(§cError§8) §r§7You have a cooldown of: §e{cooldown} §7seconds." # Tip: Only in this message you can use {cooldown}
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+cooldown-time: 15 # Default: 15 seconds.
+# =-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=
+...
