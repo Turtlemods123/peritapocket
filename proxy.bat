@@ -1,6 +1,6 @@
 @echo OFF
 :loop
-D:
-cd D:\Perita-Network\pocket\proxy
+cls
+cd %APPDATA%\Microsoft\proxy\PeritaProxy
 java -jar server.jar nogui
 exit
