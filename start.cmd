@@ -6,7 +6,6 @@ cd D:\Perita-Network\pocket
 echo.
 echo ********************PeritaCF*********************
 echo PeritaPocketmine Script de personalizacion
-echo C:\Users\pauka\AppData\Local/ngrok/ngrok.yml
 echo *************************************************
 echo *******************Opciones**********************
 echo 1- Editar Config De proxy
