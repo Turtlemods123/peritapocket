@@ -1,54 +1,18 @@
 @echo off
 :inicio
 cls
-TITLE PocketMine Perita
-cd D:\Perita-Network\pocket
+TITLE Pocket-PServer SEGURO
+cd %APPDATA%\ppocket\PeritaCraftP
 echo.
-echo ********************PeritaCF*********************
-echo PeritaPocketmine Script de personalizacion
-echo *************************************************
-echo *******************Opciones**********************
-echo 1- Editar Config De proxy
-echo 2- Iniciar server
-echo 3- salir
-echo *************************************************
-
-::-----------------------------
-::remlistademenus
-set/p menu=Seleciona un numero=
-if "%menu%"=="1" goto config
-if "%menu%"=="2" goto netwoork
-if "%menu%"=="3" goto salir
-
-:alert
-cls
-msg * hey! debes selecionar una opcion valida!
-goto inicio
-
-:config
-cls
-notepad D:\Perita-Network\pocket\proxy\config.yml
-goto inicio
-exit
-
-:salir
-cls
-goto exit
-
-:netwoork
-cls
-TITLE PocketMine Perita
-cd D:\Perita-Network\pocket
-echo.
-echo *******************Instalacion********************
-echo inicia los servidores mas comodamente
-echo solo dando unos pocos clicks :D
-echo *************************************************
-echo *******************PeritaCf**********************
+echo *******************SETUP********************
+echo Con este setup podras iniciar tu servidor
+echo como mas te guste ya sea normal o modo bucle
+echo ********************************************
+echo *****************OPCIONES*******************
 echo 1- iniciar modo [bucle]
 echo 2- iniciar modo [normal]
 echo 3- salir
-echo *************************************************
+echo ********************************************
 ::-----------------------------
 ::menu inicio server
 ::-----------------------------
@@ -60,7 +24,7 @@ if "%netwoork%"=="3" goto pocket-salir
 :pocket-bucle
 cls
 echo -------------------------------
-echo          pocket perita
+echo  POCKER SERVER SEGURO BY P.C.F
 echo -------------------------------
 start proxy.vbs
 TITLE PocketMine-MP server software for Minecraft: Bedrock Edition
@@ -111,7 +75,7 @@ goto pocket-bucle
 :pocket-normal
 cls
 echo -------------------------------
-echo          pocket perita
+echo  POCKER SERVER SEGURO BY P.C.F
 echo -------------------------------
 start proxy.vbs
 TITLE PocketMine-MP server software for Minecraft: Bedrock Edition
